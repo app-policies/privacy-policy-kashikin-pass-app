@@ -1,6 +1,6 @@
 # 貸金主任者Pass プライバシーポリシー
 
-最終更新日: 2026年6月8日
+最終更新日: 2026年6月23日
 
 Passmate（以下「当方」といいます）は、当方が提供するスマートフォンアプリ「貸金主任者Pass」（以下「本アプリ」といいます）における利用者情報の取扱いについて、以下のとおり定めます。
 
@@ -10,6 +10,7 @@ Passmate（以下「当方」といいます）は、当方が提供するスマ
 
 - 学習履歴、正誤履歴、連続学習日数、設定情報など、本アプリ内で保存される学習データ
 - 広告表示や広告効果測定のためにGoogle Mobile Ads SDKが取り扱う広告識別子、端末情報、利用状況に関する情報
+- 利用状況の把握と学習体験の改善のためにFirebase Analyticsが取り扱うアプリ利用状況に関する情報
 - アプリ内課金の購入状態確認のためにRevenueCat SDKが取り扱う購入情報、匿名のユーザー識別子、端末情報
 - App Storeを通じた購入、返金、サブスクリプション管理に関する情報
 - お問い合わせ時に利用者が入力または送信するメールアドレス、問い合わせ内容
@@ -23,6 +24,7 @@ Passmate（以下「当方」といいます）は、当方が提供するスマ
 - 問題演習、復習、学習記録など本アプリの機能提供
 - 学習状況の保存、復元、表示
 - 広告の表示、広告効果の測定、不正利用の防止
+- Firebase Analyticsによる利用状況の分析、学習体験と機能品質の改善
 - アプリ内課金の購入状態確認、プレミアム機能の提供
 - 不具合調査、品質改善、利用状況の把握
 - お問い合わせへの回答
@@ -33,6 +35,8 @@ Passmate（以下「当方」といいます）は、当方が提供するスマ
 
 - Google Mobile Ads
   - https://policies.google.com/privacy
+- Firebase Analytics
+  - https://firebase.google.com/support/privacy
 - RevenueCat
   - https://www.revenuecat.com/privacy
 - Apple
@@ -45,6 +49,16 @@ Passmate（以下「当方」といいます）は、当方が提供するスマ
 ## 広告
 
 本アプリでは、Google Mobile Adsを利用して広告を表示する場合があります。広告配信のために広告識別子や端末情報等が利用されることがあります。
+
+## Firebase Analytics
+
+本アプリでは、アプリの利用状況を把握し、学習体験や機能品質を改善するため、Google LLCが提供するFirebase Analyticsを利用します。
+
+Firebase Analyticsでは、アプリの起動、学習モードの利用、分野ID、正誤、模試結果のスコア帯、課金画面の表示元、レビュー依頼候補など、アプリの利用状況に関するイベントを送信することがあります。
+
+Firebase Analyticsには、問題本文、選択肢本文、解説本文、自由入力、氏名、メールアドレス、個別相談内容、question_idの生値、Appleの決済識別子の生値、広告ID、SDK key、AdMob ID、RevenueCat keyを送信しません。
+
+本アプリのFirebase Analyticsは、iOSで広告IDを利用しない構成で導入しています。本アプリではFirebase Authentication、Firestore、Cloud Functions、Storage、Remote Config、Crashlytics、BigQuery export、AI Logic、コイン制、ログイン機能は利用していません。
 
 ## 学習データ
 
